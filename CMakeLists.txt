@@ -9,15 +9,9 @@ find_package(glfw3 CONFIG REQUIRED)
 find_package(glm CONFIG REQUIRED)
 find_package(glad CONFIG REQUIRED)
 find_package(assimp CONFIG REQUIRED)
-find_package(draco CONFIG REQUIRED)
-find_package(fmt CONFIG REQUIRED)
 find_package(imgui CONFIG REQUIRED)
-find_package(minizip CONFIG REQUIRED)
 find_package(OpenAL CONFIG REQUIRED)
-find_package(clipper CONFIG REQUIRED)
-find_package(pugixml CONFIG REQUIRED)
 find_package(spdlog CONFIG REQUIRED)
-find_package(ZLIB CONFIG REQUIRED)
 
 add_executable(Project_GL
     Framework/Application.cpp
@@ -31,13 +25,7 @@ target_link_libraries(Project_GL PRIVATE
     glm::glm
     glad::glad
     assimp::assimp
-    draco::draco
-    fmt::fmt
     imgui::imgui
-    minizip::minizip
     OpenAL::OpenAL
-    clipper::clipper
-    pugixml::pugixml
     spdlog::spdlog
-    ZLIB::ZLIB
 )
