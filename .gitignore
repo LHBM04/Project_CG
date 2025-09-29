@@ -1,13 +1,13 @@
-.vs
-.vs/**
+.[Vv]s
+.[Vv]s/**
 
-.vscode
-.vscode/**
+.[Vv]scode
+.[Vv]scode/**
 
-.idea
-.idea/**
+.[Ii]dea
+.[Ii]dea/**
 
-.Build
-.Build/**
+.[Bb]uild
+.[Bb]uild/**
 
 .pdb
