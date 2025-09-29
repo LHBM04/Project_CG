@@ -32,4 +32,5 @@ compile_commands.json
 *.temp
 *~
 
-*vcpkg_installed/
+*[Vv]cpkg_installed/
+*[Vv]cpkg_installed/** */
