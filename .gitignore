@@ -1,20 +1,18 @@
 # Visual Studio
-.vs/
-.vs/**
+.[Vv]s/
+.[Vv]s/**
 
 # VS Code
-.vscode/
-.vscode/**
+.[Vv]scode/
+.[Vv]scode/**
 
 # IntelliJ IDEA
-.idea/
-.idea/**
+.[Ii]dea/
+.[Ii]dea/**
 
 # Build directories
-Build/
-Build/**
-build/
-build/**
+[Bb]uild/
+[Bb]uild/**
 
 # Debug files
 *.pdb
