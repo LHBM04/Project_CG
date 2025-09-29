@@ -1,13 +1,35 @@
-.[Vv]s
-.[Vv]s/**
+# Visual Studio
+.vs/
+.vs/**
 
-.[Vv]scode
-.[Vv]scode/**
+# VS Code
+.vscode/
+.vscode/**
 
-.[Ii]dea
-.[Ii]dea/**
+# IntelliJ IDEA
+.idea/
+.idea/**
 
-.[Bb]uild
-.[Bb]uild/**
+# Build directories
+Build/
+Build/**
+build/
+build/**
 
-.pdb
+# Debug files
+*.pdb
+*.exe
+*.dll
+*.obj
+*.lib
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# Temporary files
+*.tmp
+*.temp
+*~
