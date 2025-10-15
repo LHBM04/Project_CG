@@ -1,25 +1,47 @@
-# Visual Studio
-.[Vv]s/
-.[Vv]s/**
+# Microsoft Visual Studio
+.vs/
+*.suo
+*.user
+*.sln.docstates
 
 # VS Code
-.[Vv]scode/
-.[Vv]scode/**
+.vscode/
 
 # IntelliJ IDEA
-.[Ii]dea/
-.[Ii]dea/**
+.idea/
+
+# C/C++ build artifacts
+*.ilk
+*.pdb
+*.tlog
+*.obj
+*.pch
+*.idb
+*.lib
+*.exp
+*.map
+*.sbr
+*.res
+*.pch.dep
+*.ncb
+
+# Executables and libraries
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
 
 # Build directories
 [Bb]uild/
-[Bb]uild/**
-
-# Debug files
-*.pdb
-*.exe
-*.dll
-*.obj
-*.lib
+[Dd]ebug/
+[Rr]elease/
+x64/
+Win32/
+Win64/
+ARM/
+ARM64/
+ipch/
 
 # CMake generated files
 CMakeCache.txt
@@ -27,10 +49,19 @@ CMakeFiles/
 cmake_install.cmake
 compile_commands.json
 
-# Temporary files
+# Other temporary files
+*.log
 *.tmp
 *.temp
+*.bak
+*.swo
+*.swp
 *~
 
-*[Vv]cpkg_installed/
-*[Vv]cpkg_installed/**
+# vcpkg
+vcpkg_installed/
+
+# External Libraries - DO NOT IGNORE
+# Keep library files in specific directories like 'lib/' or 'third_party/'
+!/External/Binaries/**/*.dll
+!/External/Libraries/**/*.lib
