@@ -1,9 +1,12 @@
-﻿#include "../Framework/Application.h"
+#include <glad/glad.h>
+
+#include <glfw/glfw3.h>
+
 
 int main()
 {
-    Application app { };
-    app.Run();
+	if (!glfwInit())
+        return -1;
 
-    return 0;
+
 }
