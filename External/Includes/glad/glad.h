@@ -7,17 +7,16 @@
     APIs: gl=4.6
     Profile: compatibility
     Extensions:
-        WGL_ARB_extensions_string,
-        WGL_EXT_extensions_string
+        
     Loader: True
     Local files: False
     Omit khrplatform: False
     Reproducible: True
 
     Commandline:
-        --profile="compatibility" --api="gl=4.6" --generator="c" --spec="gl" --extensions="WGL_ARB_extensions_string,WGL_EXT_extensions_string"
+        --profile="compatibility" --api="gl=4.6" --generator="c" --spec="gl" --extensions=""
     Online:
-        https://glad.dav1d.de/#profile=compatibility&language=c&specification=gl&loader=on&api=gl%3D4.6&extensions=WGL_ARB_extensions_string&extensions=WGL_EXT_extensions_string
+        https://glad.dav1d.de/#profile=compatibility&language=c&specification=gl&loader=on&api=gl%3D4.6
 */
 
 
