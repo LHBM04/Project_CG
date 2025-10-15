@@ -61,7 +61,5 @@ compile_commands.json
 # vcpkg
 vcpkg_installed/
 
-# External Libraries - DO NOT IGNORE
-# Keep library files in specific directories like 'lib/' or 'third_party/'
 !/External/Binaries/**/*.dll
 !/External/Libraries/**/*.lib
