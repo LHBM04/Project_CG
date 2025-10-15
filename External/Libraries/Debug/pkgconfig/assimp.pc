@@ -5,7 +5,7 @@ includedir=${prefix}/../include
 Name: Assimp
 Description: Import various well-known 3D model formats in an uniform manner.
 Version: 6.0.2
-Libs: "-L${libdir}" -lassimp-vc143-mtd
-Libs.private:  
-Cflags: "-I${includedir}"
 
+Libs: "-L${libdir}" -lassimp-vc143-mtd -lpoly2tri
+Requires: draco polyclipping pugixml minizip
+Cflags: "-I${includedir}"

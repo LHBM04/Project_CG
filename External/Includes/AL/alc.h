@@ -38,7 +38,7 @@ extern "C" {
 #endif
 
 #ifndef ALC_API
- #if defined(AL_LIBTYPE_STATIC)
+ #if 1
   #define ALC_API
  #elif defined(_WIN32)
   #define ALC_API __declspec(dllimport)

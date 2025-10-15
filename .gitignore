@@ -27,7 +27,6 @@
 
 # Executables and libraries
 *.exe
-*.dll
 *.so
 *.dylib
 *.a
@@ -57,9 +56,3 @@ compile_commands.json
 *.swo
 *.swp
 *~
-
-# vcpkg
-vcpkg_installed/
-
-!/External/Binaries/**/*.dll
-!/External/Libraries/**/*.lib

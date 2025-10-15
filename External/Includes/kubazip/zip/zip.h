@@ -17,7 +17,7 @@
 #include <string.h>
 #include <sys/types.h>
 
-#if 0
+#ifndef ZIP_SHARED
 #define ZIP_EXPORT
 #else
 #ifdef _WIN32
