@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Game\Main.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -110,24 +114,22 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>C:\Game Projects\Project_CG\External\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(ProjectDir)External\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Game Projects\Project_CG\External\Libraries\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>assimp-vc143-mtd.lib;brotlicommon.lib;brotlidec.lib;brotlienc.lib;bz2d.lib;draco.lib;fmtd.lib;freetyped.lib;glad.lib;glfw3dll.lib;glm.lib;imguid.lib;imguizmo.lib;kubazip.lib;libpng16d.lib;minizip.lib;OpenAL32.lib;plutosvg.lib;plutovg.lib;poly2tri.lib;polyclipping.lib;pugixml.lib;spdlogd.lib;zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(ProjectDir)External\Libraries\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc143-mtd.lib;draco.lib;fmtd.lib;glad.lib;glfw3.lib;glm.lib;imguid.lib;imguizmo.lib;kubazip.lib;minizip.lib;OpenAL32.lib;poly2tri.lib;polyclipping.lib;pugixml.lib;spdlogd.lib;zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y "$(ProjectDir)External\Binaries\Debug\fmtd.dll" "$(OutDir)fmtd.dll"
-copy /Y "$(ProjectDir)External\Binaries\Debug\freetyped.dll" "$(OutDir)freetyped.dll"
-copy /Y "$(ProjectDir)External\Binaries\Debug\glfw3.dll" "$(OutDir)glfw3.dll"
-copy /Y "$(ProjectDir)External\Binaries\Debug\spdlogd.dll" "$(OutDir)spdlogd.dll"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -135,24 +137,22 @@ copy /Y "$(ProjectDir)External\Binaries\Debug\spdlogd.dll" "$(OutDir)spdlogd.dll
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>C:\Game Projects\Project_CG\External\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(ProjectDir)External\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Game Projects\Project_CG\External\Libraries\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>assimp-vc143-mt.lib;brotlicommon.lib;brotlidec.lib;brotlienc.lib;bz2.lib;draco.lib;fmt.lib;freetype.lib;glad.lib;glfw3dll.lib;glm.lib;imgui.lib;imguizmo.lib;kubazip.lib;libpng16.lib;minizip.lib;OpenAL32.lib;plutosvg.lib;plutovg.lib;poly2tri.lib;polyclipping.lib;pugixml.lib;spdlog.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(ProjectDir)External\Libraries\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc143-mt.lib;draco.lib;fmt.lib;glad.lib;glfw3.lib;glm.lib;imgui.lib;imguizmo.lib;kubazip.lib;minizip.lib;OpenAL32.lib;poly2tri.lib;polyclipping.lib;pugixml.lib;spdlog.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y "$(ProjectDir)External\Binaries\Debug\fmtd.dll" "$(OutDir)fmt.dll"
-copy /Y "$(ProjectDir)External\Binaries\Debug\freetyped.dll" "$(OutDir)freetype.dll"
-copy /Y "$(ProjectDir)External\Binaries\Debug\glfw3.dll" "$(OutDir)glfw3.dll"
-copy /Y "$(ProjectDir)External\Binaries\Debug\spdlogd.dll" "$(OutDir)spdlog.dll"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
